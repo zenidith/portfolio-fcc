@@ -1,0 +1,34 @@
+body {
+    background-image: url("images/keyboards.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body::before { content: "";
+    position: absolute;
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.70;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 5rem;
+    z-index: 999;
+    position: relative;
+}
+
+.header {
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}

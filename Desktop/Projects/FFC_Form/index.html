@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+    <h1>freeCodeCamp Survey Form
+    </h1>
+    <p><em>Thank you for taking the time to help us improve the platform</em>
+    </p>
+    </div>
+
+    <form action="action_page.php">
+        <div class="container">
+          <hr>
+
+          <label for="fullname"><b>Name</b></label>
+          <input type="name" placeholder="Enter your name" name="name" id="name" required>
+      
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter your Email" name="email" id="email" required>
+            
+          <label for="age"><b>Age (optional)</b></label>
+          <input type="number" placeholder="Age" min="10" name="email" id="age">
+
+          <label for="role"><b>Which option best describes your current role?</b></label>
+          <select>
+            <option value="Select current role:">Select current role:</option>
+            <option value="Student">Student</option>
+            <option value="Full Time">Full Time</option>
+            <option value="Part Time">Part Time</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Other">Other</option>        
+          </select>
+        
+          <hr>
+      
+        </div>
+      
+      </form>
+              
+    </div>
+    <!-- this it to test whether the project passes tests. -->
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+</html>
