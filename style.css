@@ -136,12 +136,41 @@ nav ul li:hover {
 }
 
 #contact h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     color: white;
 }
 
 #contact p {
     color: white;
+    font-style: italic;
+    padding: 30px 0;
+}
+
+#contact button svg {
+    height: 35px;
+    width: 35px;
+    padding-right: 10px;
+    margin-bottom: 0;
+}
+
+#contact button {
+    font-size: 2rem;
+    transition: transform 0.3s;
+    align-self: center;
+    display: flex;
+}
+
+.contact-buttons {
+    display: flex;
+}
+
+.contact-buttons button:hover {
+    transform: translateY(5px);
+}
+
+#contact button a {
+    align-self: center;
+    display: flex;
 }
 
 footer {
@@ -150,4 +179,17 @@ footer {
     padding: 51px 20px;
     justify-content: flex-end;
     display: flex;
+}
+
+footer svg {
+    padding-left: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+footer a {
+    display: flex;
+    align-self: center;
+    width: 100%;
+
 }
