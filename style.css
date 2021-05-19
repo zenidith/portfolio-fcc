@@ -51,6 +51,8 @@ nav ul li:hover {
 #welcome-section h1 {
     font-size: 4rem;
     color: black;
+    padding: 30px;
+    text-align: center;
 }
 
 #welcome-section h3 {
@@ -59,6 +61,34 @@ nav ul li:hover {
     font-weight: 500;
     color: black;
 }
+
+/* typewriter effect */
+
+.txt-type {
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 500;
+    color: black;
+}
+
+.txt-type:after {
+    content: "";
+    width: 1px;
+    height: 5%;
+    border-right: 4px solid #000000;
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+
+/* typewriter effect end */
 
 #welcome-section * {
     display: block;
