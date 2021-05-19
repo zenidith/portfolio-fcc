@@ -51,6 +51,8 @@ nav ul li:hover {
 #welcome-section h1 {
     font-size: 4rem;
     color: black;
+    padding: 30px;
+    text-align: center;
 }
 
 #welcome-section h3 {
@@ -86,9 +88,7 @@ nav ul li:hover {
 }
 }
 
-
 /* typewriter effect end */
-
 
 #welcome-section * {
     display: block;
