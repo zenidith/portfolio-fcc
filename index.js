@@ -26,13 +26,26 @@ setTimeout(type, 300);
 const menuList = document.querySelector('#hamburger-ul')
 const hamburger = document.querySelector('.hamburger')
 
+window.addEventListener('resize', hamburgerMenu)
 
-window.onresize = function() {
+function hamburgerMenu() {
     if (window.innerWidth <= 768) {
         hamburger.style.display = "block";
         menuList.classList.add('hamburger-ul')
+        menuList.style.display = "none"
     } else {
         hamburger.style.display = "none";
         menuList.classList.remove('hamburger-ul')
+        menuList.style.display = "flex"
     }
-} 
+}
+
+hamburgerMenu()
+    
+hamburger.addEventListener('click', ()=> {
+    if (menuList.style.display == "flex") {
+        menuList.style.display = "none" 
+    } else if (menuList.style.display == "none") {
+        menuList.style.display = "flex"
+    }
+})

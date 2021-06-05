@@ -13,13 +13,14 @@ main {
 }
 
 .hamburger {
+    position: fixed;
     color: white;
     height: 50px;
     width: 50px;
     padding: 10px;
     display: none;
-    margin-left: auto;
     cursor: pointer;
+    right: 0;
 }
 
 
@@ -36,6 +37,7 @@ a  {
 }
 
 nav {
+    min-height: var(--header-height);
     background-color: #274690;
     display: flex;
     position: fixed;
@@ -51,7 +53,6 @@ nav ul {
 
 .hamburger-ul {
     flex-direction: column;
-    display: none;
     align-items: center;
     width: 100%;
 }
