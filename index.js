@@ -4,6 +4,7 @@ let index = 0;
 let currentText = '';
 let letter = '';
 
+
 (function type() {
 if(count === texts.length) {
     count=0;
@@ -21,3 +22,17 @@ if(letter.length === currentText.length){
 }
 setTimeout(type, 300);
 }) ();
+
+const menuList = document.querySelector('#hamburger-ul')
+const hamburger = document.querySelector('.hamburger')
+
+
+window.onresize = function() {
+    if (window.innerWidth <= 768) {
+        hamburger.style.display = "block";
+        menuList.classList.add('hamburger-ul')
+    } else {
+        hamburger.style.display = "none";
+        menuList.classList.remove('hamburger-ul')
+    }
+} 

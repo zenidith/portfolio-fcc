@@ -1,8 +1,28 @@
+/* to ensure that the header doesn't block the titles of the sections and ensure smooth scrolling */
 :root {
     --header-height: 75px;
     scroll-padding-top: calc(var(--header-height) + 5px);
     scroll-behavior: smooth;
 }
+
+main {
+    background-image:  radial-gradient(#000000 1.35px, transparent 1.35px), radial-gradient(#000000 1.35px, #ffffff 1.35px);
+    background-size: 54px 54px;
+    background-position: 0 0,27px 27px;
+
+}
+
+.hamburger {
+    color: white;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    display: none;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+
 
 * {
     padding: 0;
@@ -29,6 +49,13 @@ nav ul {
     margin-left: auto;
 }
 
+.hamburger-ul {
+    flex-direction: column;
+    display: none;
+    align-items: center;
+    width: 100%;
+}
+
 nav ul li {
     padding: 25px 35px;
     font-size: 1.4rem;
@@ -48,10 +75,10 @@ nav ul li:hover {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
-    opacity: 0.8;
-    background-image: radial-gradient(#000000 1.35px, #ffffff 1.35px);
-    background-size: 27px 27px;
+    /* background-color: #ffffff;
+    opacity: 0.5; */
+    /* background-image: radial-gradient(#000000 1.35px, #ffffff 1.35px);
+    background-size: 27px 27px; */
 }
 
 #welcome-section h1 {
@@ -105,12 +132,11 @@ nav ul li:hover {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-
-    background-color: #ffffff;
+    /* background-color: #ffffff;
     opacity: 0.8;
     background-image:  radial-gradient(#000000 1.35px, transparent 1.35px), radial-gradient(#000000 1.35px, #ffffff 1.35px);
     background-size: 54px 54px;
-    background-position: 0 0,27px 27px;
+    background-position: 0 0,27px 27px; */
 }
 
 #projects h1 {
@@ -173,18 +199,6 @@ nav ul li:hover {
     display: block;
 }
 
-@media screen and (max-width: 768px) {
-    .project-tile {
-        width: 48%;
-    }
-}
-  
-@media screen and (max-width: 576px) {
-    .project-tile {
-        width: 100%;
-    }
-}
-
 #contact {
     margin-top: 60px;
     text-align: center;
@@ -194,11 +208,10 @@ nav ul li:hover {
     display: flex;
     flex-direction: column;
     width: 100%;
-
-    background-color: #ffffff;
+    /* background-color: #ffffff;
     opacity: 0.8;
     background-image: radial-gradient(#000000 1.35px, #ffffff 1.35px);
-    background-size: 27px 27px;
+    background-size: 27px 27px; */
 
 }
 
@@ -271,4 +284,24 @@ footer a {
     align-self: center;
     width: 100%;
 
+}
+
+
+@media screen and (max-width: 768px) {
+    .project-tile {
+        width: 48%;
+    }
+}
+  
+@media screen and (max-width: 576px) {
+    .project-tile {
+        width: 100%;
+    }
+    .contact-buttons {
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+    #contact h1 {
+        font-size: 2.3rem;
+    }
 }
