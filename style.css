@@ -1,6 +1,6 @@
 /* to ensure that the header doesn't block the titles of the sections and ensure smooth scrolling */
 :root {
-    --header-height: 40px;
+    --header-height: 75px;
     scroll-padding-top: calc(var(--header-height));
     scroll-behavior: smooth;
 } 
@@ -14,9 +14,12 @@ scroll-snap-type: y proximity;
 }
 
 main {
-    background-image:  radial-gradient(#000000 1.35px, transparent 1.35px), radial-gradient(#000000 1.35px, #ffffff 1.35px);
+    background-image:  radial-gradient(#000000 2px, transparent 1px), radial-gradient(#000000 1.35px, #ffffff 1.35px);
     background-size: 54px 54px;
-    background-position: 0 0,27px 27px;
+    background-position: 0 0,27px 27px; */ */
+    /* background-image: url('/images/1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat; */
 
 }
 
